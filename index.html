@@ -18,8 +18,46 @@
         visibility: hidden;
         pointer-events: none;
       }
-      #boot-splash svg {
+      .boot-loader {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
         width: 80px;
         height: 80px;
-        display: block;
-      }</style><script defer="defer" src="/build.js"></script></head><body><div id="boot-splash" aria-hidden="true"><svg width="80" height="80" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid"><circle cx="84" cy="50" r="1.12305" fill="#9f9f9f"><animate attributeName="r" values="8;0;0;0;0" keyTimes="0;0.25;0.5;0.75;1" keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1" calcMode="spline" dur="1s" repeatCount="indefinite" begin="0s"></animate><animate attributeName="cx" values="84;84;84;84;84" keyTimes="0;0.25;0.5;0.75;1" keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1" calcMode="spline" dur="1s" repeatCount="indefinite" begin="0s"></animate></circle><circle cx="79.227" cy="50" r="8" fill="#343434"><animate attributeName="r" values="0;8;8;8;0" keyTimes="0;0.25;0.5;0.75;1" keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1" calcMode="spline" dur="1s" repeatCount="indefinite" begin="-0.5s"></animate><animate attributeName="cx" values="16;16;50;84;84" keyTimes="0;0.25;0.5;0.75;1" keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1" calcMode="spline" dur="1s" repeatCount="indefinite" begin="-0.5s"></animate></circle><circle cx="45.227" cy="50" r="8" fill="#c7c7c7"><animate attributeName="r" values="0;8;8;8;0" keyTimes="0;0.25;0.5;0.75;1" keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1" calcMode="spline" dur="1s" repeatCount="indefinite" begin="-0.25s"></animate><animate attributeName="cx" values="16;16;50;84;84" keyTimes="0;0.25;0.5;0.75;1" keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1" calcMode="spline" dur="1s" repeatCount="indefinite" begin="-0.25s"></animate></circle><circle cx="16" cy="50" r="6.87695" fill="#656565"><animate attributeName="r" values="0;8;8;8;0" keyTimes="0;0.25;0.5;0.75;1" keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1" calcMode="spline" dur="1s" repeatCount="indefinite" begin="0s"></animate><animate attributeName="cx" values="16;16;50;84;84" keyTimes="0;0.25;0.5;0.75;1" keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1" calcMode="spline" dur="1s" repeatCount="indefinite" begin="0s"></animate></circle><circle cx="16" cy="50" r="0" fill="#9f9f9f"><animate attributeName="r" values="0;0;8;8;8" keyTimes="0;0.25;0.5;0.75;1" keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1" calcMode="spline" dur="1s" repeatCount="indefinite" begin="0s"></animate><animate attributeName="cx" values="16;16;16;50;84" keyTimes="0;0.25;0.5;0.75;1" keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1" calcMode="spline" dur="1s" repeatCount="indefinite" begin="0s"></animate></circle></svg></div><div id="app"></div></body></html>
+      }
+      .boot-loader span {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: #656565;
+        animation: boot-dot 1s ease-in-out infinite;
+      }
+      .boot-loader span:nth-child(1) {
+        background: #343434;
+        animation-delay: 0s;
+      }
+      .boot-loader span:nth-child(2) {
+        background: #656565;
+        animation-delay: 0.15s;
+      }
+      .boot-loader span:nth-child(3) {
+        background: #9f9f9f;
+        animation-delay: 0.3s;
+      }
+      .boot-loader span:nth-child(4) {
+        background: #c7c7c7;
+        animation-delay: 0.45s;
+      }
+      @keyframes boot-dot {
+        0%,
+        80%,
+        100% {
+          transform: scale(0.55);
+          opacity: 0.45;
+        }
+        40% {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }</style><script defer="defer" src="/build.js"></script></head><body><div id="boot-splash" aria-hidden="true"><div class="boot-loader" role="status" aria-label="Loading"><span></span> <span></span> <span></span> <span></span></div></div><div id="app"></div></body></html>
