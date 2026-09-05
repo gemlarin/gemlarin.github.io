@@ -12,6 +12,19 @@ footer[data-v-45c3ca8a]{margin-top:150px;background-color:#32312f;position:relat
 #page-wrap {
 }
 
+/* Selected works only — not project detail pages */
+#page-wrap [id^='project-'] .preview--img {
+    transition: transform 0.4s ease;
+    will-change: transform;
+}
+#page-wrap [id^='project-'] .col-lg-8,
+#page-wrap [id^='project-'] .image-container {
+    overflow: hidden;
+}
+#page-wrap [id^='project-'] .preview--img:hover {
+    transform: scale(1.05);
+}
+
 /* Magnific Popup CSS */
 .mfp-bg {
   top: 0;
