@@ -1,0 +1,11 @@
+
+.arrow-down[data-v-14ffc02a] {
+    display: inline-block;
+    width: 0.95em;
+    height: 0.95em;
+    margin-left: 1px;
+    flex-shrink: 0;
+    vertical-align: middle;
+}
+
+.container[data-v-7885e642]{margin-top:130px;font-family:"AvenirLTStdBook"}.container h2[data-v-7885e642]{font-family:"proxima_novablack";color:var(--color-ink);font-size:var(--font-h2);margin-top:0px;line-height:1em}.container h3[data-v-7885e642]{font-family:"proxima_novablack";font-size:var(--font-h3);color:var(--color-ink);margin-bottom:.75rem}.container h5[data-v-7885e642]{font-family:"AvenirLTStdLight";color:var(--color-ink);font-size:var(--font-h5);margin-top:5px;margin-bottom:.75rem}.container p[data-v-7885e642]{font-size:var(--font-body)}.container button.internal[data-v-7885e642]{background:none;border:0;font:inherit;cursor:pointer;text-align:left;outline:none;-webkit-tap-highlight-color:rgba(0,0,0,0);-moz-appearance:none;appearance:none}.container a.internal[data-v-7885e642],.container button.internal[data-v-7885e642]{color:var(--color-accent);font-size:var(--font-button);border-top:3px solid var(--color-accent);border-left:3px solid var(--color-accent);padding:5px 12px;text-decoration:none;margin-top:15px;margin-right:12px;display:inline-flex;align-items:center}.container a.internal[data-v-7885e642]:hover,.container button.internal[data-v-7885e642]:hover{padding-left:20px}.container .row[data-v-7885e642]{margin-bottom:100px}.container .row[data-v-7885e642]:not(.first){padding-top:30px}.container .text-container[data-v-7885e642]{padding-left:70px}.container .text-container--intro[data-v-7885e642]{padding-left:15px;max-width:720px}.container ul li[data-v-7885e642]{font-size:var(--font-body)}.container[data-v-7885e642] .detail-image:has(.wireframe-shot){background:var(--color-background)}.container[data-v-7885e642] .detail-image:has(.mobile-shot){width:50%;margin-left:auto;min-height:0;background:rgba(0,0,0,0)}@media(max-width: 991px){.container .text-container[data-v-7885e642]{padding-left:15px}}@media(max-width: 767px){.container .row[data-v-7885e642]{margin-bottom:50px}.container .text-container[data-v-7885e642]{padding-left:15px}.container h2[data-v-7885e642]{margin-top:20px}}
