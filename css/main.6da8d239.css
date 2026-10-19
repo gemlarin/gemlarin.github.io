@@ -252,7 +252,7 @@ footer[data-v-7497498f]{margin-top:150px;position:relative;background-color:var(
   --font-intro: var(--text-9xl);
   --font-intro-sm: var(--text-6xl);
   --font-article-h2: var(--text-3xl); /* 28px — longform section */
-  --font-article-h3: var(--text-2xl); /* 24px */
+  --font-article-h3: 1.45rem; /* 23.2px — longform h3 */
 }
 
 /* Type defaults — single place for element roles */
